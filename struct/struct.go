@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 // mapping two structs directly, but it restricts the fields for current struct to be same as the previous
+// and also it doesn't accept if a field is a struct
 
 type A struct {
 	Id   int
