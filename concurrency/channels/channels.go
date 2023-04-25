@@ -33,7 +33,7 @@ import (
 // }
 
 // func main() {
-// 	// only modify this line to defined the capacity
+// 	// only modify this line to define the capacity
 // 	ch := make(chan int, 3)
 // 	defer close(ch)
 

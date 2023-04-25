@@ -1,0 +1,6 @@
+go 1.18
+
+use (
+	./restapi/frameworks/gin
+	./restapi/frameworks/mux
+)

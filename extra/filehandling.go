@@ -4,15 +4,13 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-	"path/filepath"
 )
 
 func main() {
 	goPath := os.Getenv("GOPATH")
-	fmt.Println(goPath)
-
-	filePathToRead := filepath.Join(goPath, "/src/session/extra/helloworld.txt")
-	file, err := os.Open(filePathToRead)
+	fmt.Println("GOPATH: ", goPath)
+	// filePathToRead := filepath.Join(goPath, )
+	file, err := os.Open("helloworld.txt")
 	if err != nil {
 		fmt.Println("error while opening file : ", err)
 	}
@@ -21,5 +19,5 @@ func main() {
 	if err != nil {
 		fmt.Println("error while reading file : ", err)
 	}
-	fmt.Println(string(fileDataByteArray), file.Name())
+	fmt.Println("File Name:", file.Name(), ", Contents:", string(fileDataByteArray))
 }

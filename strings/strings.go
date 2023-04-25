@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-
 	// converting a different data type to string and vice versa
 	intData := 1
 
@@ -36,5 +35,4 @@ func main() {
 	stringBuilderData.WriteString(stringData)
 	stringBuilderData.WriteString(stringData)
 	fmt.Println(stringBuilderData.String())
-
 }
